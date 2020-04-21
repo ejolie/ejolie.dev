@@ -11,13 +11,13 @@
 
   &__title {
     font-size: $typographic-base-font-size * 1.125;
-    font-weight: 600;
+    // font-weight: 600;
     @include line-height(1.125);
     @include margin(.5, 0, .5, 0);
 
     &-link {
       color: $color-base;
-
+      font-family: 'SpoqaHanSansLight';
       &:hover,
       &:focus {
         color: $color-base

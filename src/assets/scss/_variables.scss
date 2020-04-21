@@ -2,14 +2,14 @@
  * Variables
  */
 // Colors
-$color-base: #222;
+$color-base: #3b3b3b;
 $color-primary: #6784ff;
 $color-secondary: #ff8476;
 
 $color-white: #fff;
-$color-gray: lighten($color-base, 40%);
-$color-gray-border: lighten($color-base, 77%);
-$color-gray-bg: lighten($color-base, 79%);
+$color-gray: lighten($color-base, 30%);
+$color-gray-border: lighten($color-base, 68%);
+$color-gray-bg: lighten($color-base, 73%);
 
 // Typographic
 $typographic-font-family: 'RubikRegular', 'SpoqaHanSansRegular', -apple-system,
