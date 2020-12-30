@@ -13,14 +13,16 @@ $color-gray-border: lighten($color-base, 68%);
 $color-gray-bg: lighten($color-base, 73%);
 
 // Typographic
-$typographic-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+$typographic-font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
   'Helvetica Neue', sans-serif;
+$typographic-base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+'Helvetica Neue', sans-serif;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
 $typographic-small-font-size: 14px;
 
-$typographic-base-line-height: 1.625;
+$typographic-base-line-height: 1.62;
 
 $typographic-base-font-color: $color-base;
 $typographic-link-p-font-color: $color-primary;

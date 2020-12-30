@@ -8,6 +8,7 @@ html {
 body {
   margin: 0 0 0 calc(100vw - 100%);
   font-family: $typographic-font-family;
+  font-weight: 400;
   color: $typographic-base-font-color;
   line-height: $typographic-base-line-height;
   font-size: $typographic-base-font-size;
@@ -25,28 +26,42 @@ h4,
 h5,
 h6 {
   font-family: $typographic-font-family;
-  font-weight: 600;
+  font-weight: 700;
+  caret-color: $color-base;
 }
 
 h1 {
-  font-size: $typographic-base-font-size * 2.5;
-  @include line-height(2);
-  @include margin-top(4);
-  @include margin-bottom(1);
+  // font-size: $typographic-base-font-size * 2.5;
+  // @include line-height(2);
+  // @include margin-top(4);
+  // @include margin-bottom(1);
+  margin-top: 2em;
+  margin-bottom: 4px;
+  padding: 3px 2px;
+  font-size: 1.875em;
+  line-height: 1.3;
 }
 
 h2 {
-  font-size: $typographic-base-font-size * 1.6875;
-  @include line-height(1.5);
-  @include margin-top(2);
-  @include margin-bottom(.5);
+  // font-size: $typographic-base-font-size * 1.6875;
+  // @include line-height(1.5);
+  // @include margin-top(2);
+  // @include margin-bottom(.5);
+  margin-top: 1.4em;
+  margin-bottom: 2px;
+  font-size: 1.5em;
+  line-height: 1.3;
 }
 
 h3 {
-  font-size: $typographic-base-font-size * 1.375;
-  @include line-height(1);
-  @include margin-top(2);
-  @include margin-bottom(.5);
+  // font-size: $typographic-base-font-size * 1.375;
+  // @include line-height(1);
+  // @include margin-top(2);
+  // @include margin-bottom(.5);
+  margin-top: 1em;
+  margin-bottom: 2px;
+  font-size: 1.25em;
+  line-height: 1.3;
 }
 
 h4 {
@@ -77,18 +92,33 @@ img {
   margin: inherit auto;
 }
 
+// hr {
+//   margin-top: 52px;
+//   margin-bottom: 52px;
+//   border: 0;
+//   color: $color-base;
+//   display: block;
+//   height: 26px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   background-size: 100% 26px;
+//   background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
+//   width: 100px;
+// }
+
 hr {
-  margin-top: 52px;
-  margin-bottom: 52px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  width: 100%;
+  flex: 0 0 auto;
   border: 0;
-  color: $color-base;
-  display: block;
-  height: 26px;
-  margin-right: auto;
-  margin-left: auto;
-  background-size: 100% 26px;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
-  width: 100px;
+  height: 0;
+  border-top: 0;
+  border-bottom: 1px solid $color-gray-border;
 }
 
 a {
@@ -105,29 +135,59 @@ a {
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-ul {
-  list-style: square;
-  @include margin-bottom(1);
+ul, ol {
+  // @include margin-bottom(1);
+  padding-inline-start: 60px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-family: $typographic-base-font-family;
 
   & li {
-    padding: 0 5px;
-    margin-bottom: 10px;
+    // padding: 0 5px;
+    // margin-bottom: 5px;
+    padding: 3px 2px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
+  ul {
+    list-style-type: disc;
+  }
+
+  ul, ol {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 20px;
+  }
 }
 
 p {
-  @include line-height(1);
-  @include margin-bottom(1);
+  // @include line-height(1);
+  // @include margin-bottom(1);
+  font-family: $typographic-base-font-family;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  caret-color: $color-base;
+  padding: 3px 2px;
 }
 
 blockquote {
-  padding: 0;
-  font-style: italic;
-  text-align: center;
+  // padding: 0;
+  // font-style: italic;
+  // text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  caret-color: $color-base;
+  border-left: 3px solid $color-base;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  font-size: 1.2em;
 }
 
 figure {
@@ -151,6 +211,16 @@ figcaption {
   padding-right: 14px !important;
 }
 
+@include breakpoint-xs {
+  ul, ol {
+    padding-inline-start: 30px;
+
+    ul, ol {
+      padding-inline-start: 15px;
+    }
+  }
+}
+
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {
@@ -166,6 +236,23 @@ figcaption {
     float: left;
   }
 
+  ul, ol {
+    padding-inline-start: 60px;
+
+    ul, ol {
+      padding-inline-start: 20px;
+    }
+  }
+}
+
+@include breakpoint-lg {
+  ul, ol {
+    padding-inline-start: 60px;
+
+    ul, ol {
+      padding-inline-start: 20px;
+    }
+  }
 }
 
 ::selection {

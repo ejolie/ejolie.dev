@@ -4,39 +4,44 @@
 .content {
   max-width: $layout-post-single-width;
   padding: 0 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 70px;
 
   &__title {
-    font-size: $typographic-base-font-size * 2;
+    font-size: $typographic-base-font-size * 2.2;
     max-width: $layout-post-width;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     @include line-height(1.65);
     @include margin-top(1);
-    @include margin-bottom(0)
+    @include margin-bottom(1)
   }
 
   &__body {
+    text-shadow: 0 0 0.1px rgba(0, 0, 0, .6);
+    
     & figure {
       @include margin-bottom(1);
 
-      & blockquote {
-        font-style: italic;
-        text-align: center;
-        margin-top: 0;
-        @include padding(1, 0);
+    //   & blockquote {
+    //     font-style: italic;
+    //     text-align: center;
+    //     margin-top: 0;
+    //     @include padding(1, 0);
 
-        & p {
-          max-width: $layout-post-width;
-          font-size: $typographic-base-font-size * 1.6817;
-          margin-top: 0;
-          @include margin-bottom(1);
-          @include line-height(1.5)
-        }
+    //     & p {
+    //       max-width: $layout-post-width;
+    //       font-size: $typographic-base-font-size * 1.6817;
+    //       margin-top: 0;
+    //       @include margin-bottom(1);
+    //       @include line-height(1.5)
+    //     }
 
-      }
+    //   }
 
     }
 
@@ -63,24 +68,24 @@
     padding: 0;
 
     &__title {
-      font-size: $typographic-base-font-size * 3;
+      font-size: $typographic-base-font-size * 2.5;
       @include line-height(2.25);
       @include margin-top(2.25);
       @include margin-bottom(1.5)
     }
 
-    &__body {
-      font-size: $typographic-base-font-size * 1.125;
-      @include line-height(1.125);
-      @include margin-bottom(1.125);
+    // &__body {
+    //   font-size: $typographic-base-font-size * 1.125;
+    //   @include line-height(1.125);
+    //   @include margin-bottom(1.125);
 
-      & p {
-        font-size: $typographic-base-font-size * 1.125;
-        @include line-height(1.125);
-        @include margin-bottom(1.125)
-      }
+    //   & p {
+    //     font-size: $typographic-base-font-size * 1.125;
+    //     @include line-height(1.125);
+    //     @include margin-bottom(1.125)
+    //   }
 
-    }
+    // }
 
   }
 
