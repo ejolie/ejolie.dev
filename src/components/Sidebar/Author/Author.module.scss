@@ -2,6 +2,7 @@
 @import '../../../assets/scss/mixins';
 
 .author {
+
   &__photo {
     display: inline-block;
     margin-bottom: 0;
@@ -11,6 +12,7 @@
 
   &__title {
     font-size: $typographic-base-font-size * 1.125;
+    font-family: $typographic-font-family;
     font-weight: 600;
     @include line-height(1.125);
     @include margin(.5, 0, .5, 0);
@@ -27,6 +29,7 @@
   }
 
   &__subtitle {
+    font-family: $typographic-font-family;
     color: $color-gray;
     @include line-height(1);
     @include margin-bottom(1)
