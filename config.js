@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'ejolie.dev',
   subtitle: '공부하고 기록하고 공유하는 공간',
-  copyright: '© 2020. Eunjeong Park All Rights Reserved.',
+  copyright: `© ${new Date().getFullYear()}. Eunjeong Park All Rights Reserved.`,
   disqusShortname: 'ejolie',
   postsPerPage: 6,
   googleAnalyticsId: '',

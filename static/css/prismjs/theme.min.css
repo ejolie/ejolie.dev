@@ -69,7 +69,7 @@ pre[class*='language-'] ::selection {
   border-radius: 3px;
   padding: 0.2em 0.4em;
   font-size: 85%;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   white-space: normal;
 }
@@ -151,14 +151,17 @@ pre[data-line] {
 }
 
 .gatsby-highlight {
-  margin-bottom: 1.75rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
   margin-left: -1.3125rem;
   margin-right: -1.3125rem;
   border-radius: 10px;
   background: #011627;
   -webkit-overflow-scrolling: touch;
   overflow: auto;
-  box-shadow: 0px 5px 35px 1px rgba(50, 50, 93, 0.17);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 672px) {
