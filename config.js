@@ -8,7 +8,7 @@ module.exports = {
   copyright: `© ${new Date().getFullYear()}. Eunjeong Park All Rights Reserved.`,
   disqusShortname: 'ejolie',
   postsPerPage: 6,
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'G-VMK6BJYDWB',
   useKatex: false,
   menu: [
     {
