@@ -304,3 +304,8 @@ GET /servlet-test/login? HTTP/1.1
 
 따라서 action 속성에 쿼리 스트링이 있는 URL을 넣고 GET 방식으로 요청을 전송했을 때 action URL에 있던 기존 쿼리 스트링이 지워지고 (input 태그가 없었기 때문에) `?` 만 남은 상태로 요청이 전송되었다는 사실을 깨달았다.
 
+
+# 참고자료
+- https://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.1
+- https://stackoverflow.com/questions/1116019/submitting-a-get-form-with-query-string-params-and-hidden-params-disappear
+- https://www.w3.org/TR/2011/WD-html5-20110525/association-of-controls-and-forms.html#application-x-www-form-urlencoded-encoding-algorithm
