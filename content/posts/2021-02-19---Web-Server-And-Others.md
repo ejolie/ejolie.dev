@@ -13,7 +13,7 @@ socialImage: ''
 
 # 웹 서버(Web Server)
 
-- 웹 서버는 **HTTP 프로토콜을 통해 클라이언트(브라우저)의 요청을 받아 응답으로 HTML 문서와 같은 정적 컨텐츠를 제공**해주는 소프트웨어 또는 하드웨어를 말한다.
+- 웹 서버는 **HTTP 프로토콜을 통해 클라이언트(브라우저)의 요청을 받아 응답으로 HTML 문서와 같은 정적 콘텐츠를 제공**해주는 소프트웨어 또는 하드웨어를 말한다.
 
 - 예시
   - Apache HTTP Server
@@ -24,7 +24,7 @@ socialImage: ''
 
 # 서블릿 컨테이너(Servlet Container) = 웹 컨테이너(Web Container)
 
-- 서블릿 컨테이너는 **JSP/Servlet과 같은 서버 사이드 기술을 이용해 동적 컨텐츠를 제공**해주기 위한 웹 서버의 구성 요소다.
+- 서블릿 컨테이너는 **JSP/Servlet과 같은 서버 사이드 기술을 이용해 동적 콘텐츠를 제공**해주기 위한 웹 서버의 구성 요소다.
 
 - **Java EE 명세 중 Servlet API만 구현한 것**을 서블릿 컨테이너라 한다. Java EE의 다른 기술을 서블릿 컨테이너에서 사용하기 위해서는 classpath에 jar 파일을 추가해야 한다.
 - 웹 애플리케이션 서버 중에서 HTTP 요청을 받아 처리하는 기초 역할을 맡는다.
@@ -79,15 +79,15 @@ socialImage: ''
 
 Java EE의 일부만 지원하는 Tomcat을 서블릿 컨테이너 또는 웹 서버로 분류하기도 한다. 하지만 최근에 EJB의 대안으로 Spring과 같은 경량 프레임워크를 사용하게 되면서 classpath에 필요한 라이브러리 jar 파일을 추가하는 것만으로도 웹 애플리케이션 서버 대신 서블릿 컨테이너를 사용할 수 있게 되었다. 따라서 **넓은 의미로 Tomcat을 웹 애플리케이션 서버라고도 한다.**
 
-Tomcat은 그 자신이 하나의 거대한 자바 애플리케이션이기도 하다. Tomcat을 기동하기 위해서는 JRE 환경의 JVM 상에서 `org.apache.catalina.startup.Bootstrap` 클래스를 실행해야 하기 때문이다. 따라서 Tomcat 실행을 위해 자바는 필수적이다. 이는 Tomcat 뿐만 아니라 자바 베이스의 모든 WAS에 해당되는 사항이다.
+Tomcat은 하나의 거대한 자바 애플리케이션이기도 하다. Tomcat을 기동하기 위해서는 JRE 환경의 JVM 상에서 `org.apache.catalina.startup.Bootstrap` 클래스를 실행해야 하기 때문이다. 따라서 Tomcat 실행을 위해 자바는 필수적이며 이는 자바 베이스의 모든 WAS에 해당되는 사항이다.
 
 
 
 # 웹 서비스 구성: WEB-WAS?
 
-과거에는 웹 소스 내 각종 이미지, CSS, JavaScript 등 정적 컨텐츠를 처리하기 위해 WEB-WAS를 분리 구성하는 경우가 많았다. 즉, 정적 컨텐츠 서빙을 위해 웹 서버(예: Apache HTTP Server)를, 동적 컨텐츠 생성을 위해 애플리케이션 서버(예: Apache Tomcat)를 사용하는 것이다. 이렇게 하면 웹 서버가 정적 컨텐츠 처리 역할을 담당하게 되어 Tomcat의 처리 부하가 줄어들게 된다.
+과거에는 웹 소스 내 각종 이미지, CSS, JavaScript 등 정적 컨텐츠를 처리하기 위해 WEB-WAS를 분리 구성하는 경우가 많았다고 한다. 즉, 정적 컨텐츠 서빙을 위해 웹 서버(예: Apache HTTP Server)를, 동적 컨텐츠 생성을 위해 애플리케이션 서버(예: Apache Tomcat)를 사용하는 것이다. 이렇게 하면 웹 서버가 정적 컨텐츠 처리 역할을 담당하게 되어 Tomcat의 처리 부하가 줄어들게 된다.
 
-하지만 최근에는 APR/Native를 사용하면서 Tomcat I/O 성능이 더욱 향상되었으며 Tomcat 8.0 부터는 URL Rewrite(`org.apache.catalina.valves.rewrite.RewriteValve`)와 같은 웹 서버 특유의 기능들까지 제공하고 있다. 또한 CDN(Content Delivery Network)을 구성하는 사이트가 늘어나고 있어 단지 정적 컨텐츠 처리를 위해서 WEB-WAS를 분리 구성하는 경우는 예전만큼 많지 않다고 한다.
+하지만 최근에는 APR/Native를 사용하면서 Tomcat I/O 성능이 더욱 향상되었으며 Tomcat 8.0 부터는 URL Rewrite와 같은 웹 서버 특유의 기능들까지 제공하고 있다. 또한 CDN을 구성하는 사이트가 늘어나고 있어 단지 정적 컨텐츠 처리를 위해서 WEB-WAS를 분리 구성하는 경우는 예전만큼 많지 않다고 한다.
 
 
 
