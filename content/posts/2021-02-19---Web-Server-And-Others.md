@@ -94,13 +94,10 @@ socialImage: ''
 
 
 # 참고자료
-
-- https://javajee.com/web-server-web-container-and-application-server
-
-- https://ducmanhphan.github.io/2020-04-01-The-difference-between-web-server-web-container-application-server/
-
-- 최진식, 《자바고양이 Tomcat 이야기》, 좋은땅
-
-- 최희탁, 《웹 프로그래머를 위한 서블릿 컨테이너의 이해》, 한빛미디어
-
-- 이병승, 《자바 웹을 다루는 기술》, 길벗
+- 웹 문서
+  - https://javajee.com/web-server-web-container-and-application-server
+  - https://ducmanhphan.github.io/2020-04-01-The-difference-between-web-server-web-container-application-server/
+- 도서
+  - 이병승, 《자바 웹을 다루는 기술》, 길벗, 2019
+  - 최진식, 《자바고양이 Tomcat 이야기》 개정판, 좋은땅, 2017
+  - 최희탁, 《(웹 프로그래머를 위한) 서블릿 컨테이너의 이해》, 한빛미디어, 2014

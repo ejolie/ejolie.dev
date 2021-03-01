@@ -306,6 +306,7 @@ GET /servlet-test/login? HTTP/1.1
 
 
 # 참고자료
-- https://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.1
-- https://stackoverflow.com/questions/1116019/submitting-a-get-form-with-query-string-params-and-hidden-params-disappear
-- https://www.w3.org/TR/2011/WD-html5-20110525/association-of-controls-and-forms.html#application-x-www-form-urlencoded-encoding-algorithm
+- 웹 문서
+  - https://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.1
+  - https://stackoverflow.com/questions/1116019/submitting-a-get-form-with-query-string-params-and-hidden-params-disappear
+  - https://www.w3.org/TR/2011/WD-html5-20110525/association-of-controls-and-forms.html#application-x-www-form-urlencoded-encoding-algorithm
